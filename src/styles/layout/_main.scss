@@ -61,12 +61,12 @@
   transition: color 300ms linear, background-color 300ms linear;
 }
 
-// .projects__link:hover,
-// .projects__link:focus {
-//   color: rgb(3, 44, 79);
-//   background-color: #a8a8a8;
-//   border-radius: 4px;
-// }
+.projects__link:hover,
+.projects__link:focus {
+  color: rgb(3, 44, 79);
+  background-color: #a8a8a8;
+  border-radius: 4px;
+}
 
 .projects__technology {
   margin-left: 3px;
