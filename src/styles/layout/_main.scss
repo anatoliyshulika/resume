@@ -58,14 +58,14 @@
   color: #595959;
   margin-left: 10px;
   margin-right: 1px;
-  transition: color 300ms linear, font-weight 300ms linear;
+  transition: color 300ms linear, background-color 300ms linear;
 }
 
 .projects__link:hover,
 .projects__link:focus {
-  color: rgb(0, 136, 255);
-  // transform: scale(1.01);
-  font-weight: 500;
+  color: rgb(3, 44, 79);
+  background-color: #a8a8a8;
+  border-radius: 4px;
 }
 
 .projects__technology {
