@@ -1,0 +1,128 @@
+.main {
+  width: 830px;
+  padding: 40px 90px;
+}
+
+.position {
+  @include fonts(20, 30);
+  color: #212121;
+}
+
+.aplicant {
+  @include fonts(36, 48);
+  color: #212121;
+  margin-bottom: 30px;
+}
+
+.objective {
+  margin-bottom: 10px;
+}
+
+.section-header {
+  @include fonts(22, 27);
+  color: #212121;
+  margin-bottom: 15px;
+}
+
+.projects__list {
+  padding-left: 18px;
+  font-weight: 700;
+  @include fonts(14, 24);
+  color: #000000;
+}
+
+.projects__item {
+  display: flex;
+}
+
+.wrapper {
+  width: 380px;
+  margin-right: 2px;
+}
+
+.dotted-line {
+  display: flex;
+  align-items: baseline;
+}
+
+.dotted-line::after {
+  content: "";
+  display: inline-block;
+  flex-grow: 1;
+  height: 2px;
+  border-bottom: 2px dotted #595959;
+}
+
+.projects__link {
+  font-weight: 400;
+  color: #595959;
+  margin-left: 10px;
+  margin-right: 1px;
+  transition: color 300ms linear, font-weight 300ms linear;
+}
+
+.projects__link:hover,
+.projects__link:focus {
+  color: rgb(0, 136, 255);
+  // transform: scale(1.01);
+  font-weight: 500;
+}
+
+.projects__technology {
+  margin-left: 3px;
+  margin-right: 3px;
+  font-weight: 400;
+  color: #595959;
+}
+
+// ==========================================================================
+.job__position {
+  @include fonts(16, 20);
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.job__place {
+  color: #fb6d3a;
+}
+
+.job__duration {
+  @include fonts(12, 15);
+  color: #a8a8a8;
+  margin-bottom: 10px;
+}
+
+.divider {
+  font-weight: 500;
+  color: #000000;
+}
+
+.job__discription {
+  padding-left: 15px;
+  @include fonts(14, 24);
+  margin-bottom: 15px;
+}
+
+.university {
+  @include fonts(16, 20);
+  color: #fb6d3a;
+  margin-bottom: 10px;
+}
+
+.faculty {
+  display: inline-block;
+  width: 120px;
+  font-weight: 700;
+  @include fonts(14, 17);
+  color: #000000;
+}
+
+.faculty-discription {
+  color: #fb6d3a;
+  font-weight: 700;
+  @include fonts(14, 17);
+}
+
+.qualification {
+  margin-bottom: 10px;
+}

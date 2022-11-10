@@ -1,0 +1,17 @@
+@mixin fonts($fs: 14, $lh: 16, $ls: 0.03) {
+  font-size: #{$fs}px;
+  line-height: decimal-round(($lh / $fs), 2);
+  letter-spacing: #{$ls}em;
+}
+
+@mixin dotted-line($color: #000, $alignment: bottom) {
+  background-image: linear-gradient(
+    to right,
+    $color 0%,
+    $color (100% / 3),
+    transparent (100% / 3)
+  );
+  background-position: right $alignment;
+  background-size: (3px) 2px;
+  background-repeat: repeat-x;
+}
