@@ -1,9 +1,10 @@
 .sidebar {
-  width: 370px;
+  width: 371px;
   padding-top: 40px;
 
   color: #ffffff;
-  background-color: #1e2939;
+  // background-color: #1e2939;
+  background-color: #315160;
 }
 
 .avatar {
@@ -22,18 +23,38 @@
   font-weight: 700;
 }
 
-.contact {
+.contact__list {
+  list-style: none;
+  padding-left: 10px;
+
   @include fonts(14, 27, 0.03);
 }
 
-.contact__letter {
-  margin-right: 5px;
-
-  font-weight: 700;
+.contact__link {
+  position: relative;
+  opacity: 0.7;
 }
 
-.contact__link {
-  opacity: 0.5;
+.address {
+  opacity: 0.7;
+}
+
+.contact__link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 300ms ease-out;
+}
+
+.contact__link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .sidebar__list {

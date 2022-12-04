@@ -6,7 +6,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const ImageminPlugin = require("imagemin-webpack");
 const CopyPlugin = require("copy-webpack-plugin");
 
-let htmlPageNames = ["index"];
+let htmlPageNames = ["index", "ukrainian"];
 let multipleHtmlPlugins = htmlPageNames.map((name) => {
   return new HtmlWebpackPlugin({
     template: `./src/${name}.html`, // relative path to the HTML files
@@ -19,6 +19,7 @@ let multipleHtmlPlugins = htmlPageNames.map((name) => {
 module.exports = {
   entry: {
     [htmlPageNames[0]]: path.resolve(__dirname, "./src/index.js"),
+    [htmlPageNames[1]]: path.resolve(__dirname, "./src/index.js"),
   },
 
   output: {
@@ -31,6 +32,13 @@ module.exports = {
 
   stats: {
     children: true,
+  },
+
+  externals: {
+    // only define the dependencies you are NOT using as externals!
+    canvg: "canvg",
+    html2canvas: "html2canvas",
+    dompurify: "dompurify",
   },
 
   optimization: {
