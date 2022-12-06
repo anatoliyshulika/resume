@@ -46,10 +46,10 @@
 
 .manifest {
   height: 500px;
-  padding: 5px;
+  padding: 20px;
 
   @include fonts(17, 22);
-  text-align: center;
+  text-align: left;
   vertical-align: middle;
 
   border-radius: 3px;
