@@ -19,6 +19,6 @@ const options = {
 
 const btnpdfRef = document.querySelector(".btn-pdf");
 btnpdfRef.addEventListener("click", () => {
-  doc.set(options).from(printedElement).save();
-  // window.print();
+  // doc.set(options).from(printedElement).save();
+  window.print();
 });
