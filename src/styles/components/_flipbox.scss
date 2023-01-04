@@ -1,6 +1,6 @@
 .flip-box {
-  width: 370px;
-  height: 540px;
+  width: 310px;
+  height: 294px;
   perspective: 1000px;
 }
 
@@ -31,7 +31,7 @@
 
 /* Style the front side (fallback if image is missing) */
 .flip-box-front {
-  background-color: #ffffff;
+  background-color: #315160;
   color: black;
 }
 
@@ -45,10 +45,10 @@
 }
 
 .manifest {
-  height: 500px;
+  height: 254px;
   padding: 20px;
 
-  @include fonts(17, 22);
+  @include fonts(16, 18);
   text-align: left;
   vertical-align: middle;
 

@@ -7,14 +7,14 @@
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #f5f7fa;
-  color: #595959;
+  color: #000000;
   @include fonts(14, 18, 0.04);
 }
 
 .container {
   display: flex;
   flex-direction: row-reverse;
-  width: 1200px;
+  width: 1010px;
   margin: 0 auto;
 
   background-color: #ffffff;
