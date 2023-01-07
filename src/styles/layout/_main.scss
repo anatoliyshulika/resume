@@ -1,10 +1,10 @@
 .main {
   position: relative;
-  width: 780px;
+  width: 790px;
   // height: 1680px;
-  height: 1427px;
+  height: 1556px;
   // padding: 40px 90px;
-  padding: 40px 40px;
+  padding: 40px 50px;
 }
 
 .flag-wrapper {
@@ -80,7 +80,7 @@
 }
 
 .wrapper {
-  width: 400px;
+  width: 420px;
   // width: 480px;
   margin-right: 2px;
 }
@@ -99,16 +99,18 @@
 // }
 
 .projects__gitlink {
+  display: inline-block;
   font-weight: 500;
   text-decoration: underline;
   transition: color 300ms linear, background-color 300ms linear;
 }
 
 .projects__link {
+  display: inline-block;
   font-weight: 700;
-  // color: #595959;
+  text-decoration: underline;
   margin-left: 10px;
-  margin-right: 1px;
+  margin-right: 10px;
   transition: color 300ms linear, background-color 300ms linear;
 }
 
@@ -166,7 +168,14 @@
 .job__discription {
   padding-left: 15px;
   @include fonts(14, 24);
+}
+
+.achievement {
   margin-bottom: 15px;
+}
+
+.achievement span {
+  font-weight: 500;
 }
 
 .university {

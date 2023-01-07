@@ -1,5 +1,5 @@
 .sidebar {
-  width: 311px;
+  width: 310px;
   padding-top: 70px;
 
   color: #ffffff;
@@ -33,6 +33,7 @@
 
 .contact__link {
   position: relative;
+  text-decoration: underline;
 }
 
 .contact__link::after {
